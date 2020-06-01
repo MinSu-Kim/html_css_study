@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/video.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/video.js"></script>
+</head>
+<body>
+	<div id="container_video">
+		<header>
+			<p id="dokdo_video">독도 영상</p>
+			<p id="dokdo_index">▶ 독도 Intro로 돌아가기</p>
+			<nav id="pc_menu">
+				<ul>
+					<li><a href="index.html">독도 Intro</a></li>
+					<li><a href="introduce.html">독도 소개</a></li>
+					<li><a href="dokdovideo.html">독도 영상</a></li>
+					<li><a href="dokdoaudio.html">독도 음악</a></li>
+					<li><a href="dokdoimages.html">독도 사진</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- PC화면 독도 영상 -->
+		<section class="pc_dokdovideo">
+			<h2>&#60;&nbsp;독도 영상&nbsp;&#62;</h2>
+			<ol>
+				<li><span class="title">외교부 독도 소개 동영상</span><br>
+					<iframe width="688" height="387" src="https://www.youtube.com/embed/muB4_LNZ2Rk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</li>
+				<li><span class="title">플래시몹(서울역광장) 동영상</span><br>
+					<video width="688" height="387" src="medias/mop.mp4" controls></video>
+				</li>
+			</ol>
+		</section>
+		
+		<!-- 모바일 화면 독도 영상 -->
+		<div id="dialog_wrap">
+			<div id="dialog_header">
+				<span id="dialog_title">독도 영상</span>
+				<button><b>X</b></button>
+			</div>
+			<div id="dialoig_content">
+				<ol class="mobile_dokdovideo">
+					<li><span class="dv_title">&#60;&nbsp;외교부 독도 소개 동영상&nbsp;&#62;</span><br>
+						<iframe width="688" height="387" src="https://www.youtube.com/embed/muB4_LNZ2Rk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</li>
+					<li><span class="dv_title">&#60;&nbsp;플래시몹(서울역광장) 동영상&nbsp;&#62;</span>
+						<video width="688" height="387" src="medias/mop.mp4" controls></video>
+					</li>
+				</ol>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>

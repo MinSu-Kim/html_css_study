@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>독도</title>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: 'Noto Sans KR', sans-serif;
+		color: #07080a;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	.container {
+		width: 950px;
+		margin: 0 auto;
+	}
+	
+	header, nav {
+		border-bottom: 2px solid #084f93;
+	}
+	
+	.logo {
+		width: 200px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 30px 0;
+	}
+	
+	.logo img {
+		width: 45px;
+		float: left;
+		margin-right: 10px;
+	}
+	
+	.logo h1 {
+		float: left;
+	}
+	
+	nav {
+		margin-bottom: 50px;
+	}
+	
+	nav ul {
+		overflow: hidden;
+		height: 45px;
+		line-height: 45px;
+	}
+	
+	nav li {
+		list-style: none;
+		float: left;
+		width: 20%;
+		text-align: center;
+	}
+	
+	nav a {
+		font-size: 18px;
+	}
+	
+	nav a:hover {
+		font-weight: 600;
+	}
+	
+	section {
+		position: relative;
+	} 
+	
+	#small {
+		overflow: hidden;
+	}
+	
+	.small_img {
+		width: 220px;
+		height: 150px;
+		margin-right: 23px;
+		margin-bottom: 23px;
+		overflow: hidden;
+		float: left;
+	}
+	
+	.small_img:nth-of-type(4n){
+		margin-right: 0;
+	}
+	
+	.small_img:nth-of-type(n+9){
+		margin-bottom: 0;
+	}
+	
+	.small_img img {
+		width: 105%;
+		height: 105%;
+		margin-left: -5px;
+   		margin-top: -3px;
+   		cursor: pointer;
+	}
+	
+	#big {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: rgba(0,0,0,.8);
+		top: 0;
+		left: 0;
+	}
+	
+	#big img {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	#big button {
+		position: absolute;
+		top: 30px;
+		right: 50px;
+		border: none;
+		width: 50px;
+		height: 50px;
+		font-size: 25px;
+    	border-radius: 10px;
+	}
+	
+	footer {
+		margin-top: 50px;
+		border-top: 2px solid #084f93;
+		padding: 20px;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	$(function(){
+		$("#big").hide();
+		
+		$(".small_img").click(function(){			
+			var imgSrc = $(this).find("img").attr("src");
+			
+			var $img = $("<img>").attr("src", imgSrc);
+			
+			$(".big_img").html($img);
+			$("#big").show();
+		})
+		
+		$("#btn").click(function(){
+			$("#big").hide();
+		})
+	})
+</script>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/logo.png" alt="logo" />
+			<h1>독도</h1>
+		</div>
+	</header>
+	<nav>
+		<ul class="container">
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="intro.html">독도소개</a></li>
+			<li><a href="video.html">독도영상</a></li>
+			<li><a href="audio.html">독도음악</a></li>
+			<li><a href="photo.html">독도사진</a></li>
+		</ul>
+	</nav>
+	<section class="container">
+		<div id="small">
+			<div class="small_img"><img src="images/4-1.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-2.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-3.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-4.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-5.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-6.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-7.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-8.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-9.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-10.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-11.jpg" alt="이미지"></div>
+			<div class="small_img"><img src="images/4-12.jpg" alt="이미지"></div>
+		</div>
+		<div id="big">
+			<div class="big_img"></div>
+			<button id="btn">X</button>
+		</div>
+	</section>
+	<footer>
+		<p class="container">Copyright &copy; Dokdo</p> 
+	</footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@CHARSET "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* ------ PC 화면 메뉴 -------- */
+@media all and (min-width: 768px){
+	nav#pc_menu{
+		height: 50px;
+		background-color: #353535;
+	}
+	
+	nav#pc_menu > ul{
+		width: 60%;
+		margin: 0 auto;
+		
+	}
+	
+	nav#pc_menu > ul > li{
+		float: left;
+		width: 20%;
+		height: 50px;
+		line-height: 50px;
+		position: relative;
+	}
+	
+	nav#pc_menu > ul > li > a{
+		color: white;
+		font-weight: bold;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+	}
+	
+	nav#pc_menu > ul > li > a:hover{
+		color: #FFE400;
+	}
+}
+
+/* ------ 모바일 화면 메뉴 -------- */
+@media all and (max-width: 767px){
+	nav#pc_menu{
+		display: none;
+	}
+
+	body, html{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	
+	header{
+		width: 100%;
+		height: 50px;
+		background-color: #353535;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+}

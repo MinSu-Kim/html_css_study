@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: 'Noto Sans KR', sans-serif;
+		color: #07080a;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	.container {
+		width: 950px;
+		margin: 0 auto;
+	}
+	
+	header, nav {
+		border-bottom: 2px solid #084f93;
+	}
+	
+	.logo {
+		width: 200px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 30px 0;
+	}
+	
+	.logo img {
+		width: 45px;
+		float: left;
+		margin-right: 10px;
+	}
+	
+	.logo h1 {
+		float: left;
+	}
+	
+	nav {
+		margin-bottom: 50px;
+	}
+	
+	nav ul {
+		overflow: hidden;
+		height: 45px;
+		line-height: 45px;
+	}
+	
+	nav li {
+		list-style: none;
+		float: left;
+		width: 20%;
+		text-align: center;
+	}
+	
+	nav a {
+		font-size: 18px;
+	}
+	
+	nav a:hover {
+		font-weight: 600;
+	}
+	
+	section .box {
+		height: 100px;
+		border: 2px solid #084f93;
+		border-radius: 10px;
+		padding: 15px;
+		margin-bottom: 20px;
+	}
+	
+	section h3 {
+		border-left: 5px solid #d88144;
+		padding-left: 10px;
+		margin-bottom: 10px;
+	}
+	
+	section p {
+		padding-left: 10px;
+	}
+	
+	footer {
+		margin-top: 50px;
+		border-top: 2px solid #084f93;
+		padding: 20px;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/logo.png" alt="logo" />
+			<h1>독도</h1>
+		</div>
+	</header>
+	<nav>
+		<ul class="container">
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="intro.html">독도소개</a></li>
+			<li><a href="video.html">독도영상</a></li>
+			<li><a href="audio.html">독도음악</a></li>
+			<li><a href="photo.html">독도사진</a></li>
+		</ul>
+	</nav>
+	
+	<section class="container">
+		<div class="box" id="box1">
+			<h3>독도역사</h3>
+			<p>
+				독도(獨島)라는 명칭은 한국어와 중국어 화자들이 일반적으로 사용하는 이름이다.
+				인도유럽어권에서는 리앙쿠르 바위섬, 일본어권에서는 다케시마 섬이라 부른다.
+				20세기 초까지는 독도, 석도 또는 마쓰시마라고 불리었다.
+			</p>
+		</div>
+		<div class="box" id="box2">
+			<h3>독도지리</h3>
+			<p>
+				독도는 주로 두 개의 섬으로 이루어지며 150미터 떨어진 두 섬은 동도와 서도로 불린다.
+				약 90개의 섬과 암초로 이루어진 신생대 화산암으로 구성되어 있다.
+				독도는 동경 약 131˚ 52´ 위도 약 37˚ 14´에 위치한다.
+			</p>
+		</div>
+		<div class="box" id="box3">
+			<h3>독도생활</h3>
+			<p>
+				900명이 넘는 한국인 시민들이 이 섬에 거주하며, 실제로 영구거주를 하는 사람은 단 두 사람이다.
+				한국정보는 거주 주장을 하기 위하여 이들에게 보조금을 지불하고 있다.
+			</p>
+		</div>
+	</section>
+	
+	<footer>
+		<p class="container">Copyright &copy; Dokdo</p> 
+	</footer>
+</body>
+</html>

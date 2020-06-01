@@ -1,0 +1,109 @@
+@CHARSET "UTF-8";
+
+@media all and (max-width: 767px){
+	#dokdo_audio{
+		color: #fff;
+		font-weight: bold;
+		position: fixed;
+		left: 20px;
+		top: 13px;
+	}
+	
+	#dokdo_index{
+		color: #ccc;
+		font-weight: bold;
+		position: fixed;
+		right: 20px;
+		top: 13px;
+	}
+	
+	.pc_dokodaudio{
+		display: none;
+	}
+	
+	#dialog_wrap{
+		position: absolute;
+		top: 100px;
+		left: 15px;
+		margin-bottom: 50px;
+		width: 90%;
+		text-align: center;
+		border: 5px solid #444;
+		border-radius: 5px;
+		padding-bottom: 30px;
+		background-color: #fdfdfd;
+	}
+	
+	#dialog_header{
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		background-color: #666;
+		color: #FFE400;
+		font-weight: bold;
+		position: relative;
+	}
+	
+	#dialog_header button{
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		background: rgba(255, 255, 255, 0.8);
+		width: 28px;
+		height: 28px;
+		border: none;
+		border-radius: 5px;	
+	}
+	
+	#dialoig_content{
+		padding: 15px;
+	}
+	
+	#dialoig_content .title{
+		font-weight: bold;
+	}
+	
+	audio, img{
+		margin: 20px 0;
+		width: 80%;
+	}
+}
+
+/* ------ PC 화면 메뉴 -------- */
+@media all and (min-width: 768px){
+	#dokdo_audio, #dokdo_index{
+		display: none;
+	}
+	
+	#dialog_wrap{
+		display: none;
+	}
+	
+	section {
+		width: 1000px;
+		margin: 0 auto;
+		border: 2px solid #efefef;
+		border-radius: 10px;
+		padding: 10px 20px;
+		margin-top: 70px;
+		text-align: center;
+	}
+	
+	h2{
+		padding-bottom: 30px;
+		color: #2282a7;
+	}
+	
+	section .title{
+		font-weight: bold;
+	}
+	
+	audio{
+		margin: 15px 0;
+	}
+	
+	section img{
+		width: 300px;
+		margin-bottom: 20px;
+	}
+}
