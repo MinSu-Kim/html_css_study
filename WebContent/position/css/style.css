@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.parent{
+	border: 5px solid red;
+	width: 600px;
+	/* height: 200px; */
+	overflow: hidden;
+	text-align: center;
+}
+
+.child{
+	background-color: gold;
+	width:200px;
+	height:200px;
+	/* float: right; */
+}

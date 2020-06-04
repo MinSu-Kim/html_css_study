@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.parent{
+	border: 5px solid red;
+	width: 600px;
+}
+.top{
+	background-color: skyblue;
+	height: 50px;
+}
+.left{
+	background-color: orange;
+	height: 100px;
+	width:200px;
+	float: left;
+}
+.right{
+	background-color: purple;
+	height: 100px;
+	width: 400px;
+	float: right;
+}
+.bottom{
+	background-color: gray;
+	height: 50px;
+	clear: none;
+}

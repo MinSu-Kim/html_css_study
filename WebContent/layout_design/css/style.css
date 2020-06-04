@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.container {
+	border: 1px solid red;
+	width: 1200px;
+	margin: auto;
+}
+
+header{
+	background-color: skyblue;
+	/* height: 100px; 자식요소가 float로 지정되어 있어 높이값을 정해주는 방법 1 */
+	overflow: hidden; /* 자식요소가 float로 지정되어 있어 높이값을 정해주는 방법 2 */
+}
+header article{
+	background-color: lightgray; /* header하위 article의 공통영역*/
+	width: 300px;
+	height: 100px;
+} 
+.logo{
+	float:left;	 */	/* header하위 article의 다른 부분*/
+}			 
+.navi{              /* header하위 article의 다른 부분*/
+	float:right;	
+}			 
+
+/* section이 두 개 존재하므로 구분하기 위해 클래스 지정 */
+.box1{
+	background-color: yellowgreen;
+	height:300px; /* block는 기본적으로 width는 부모의 폭만큼 설정됨*/
+}
+.box2{
+	background-color: yellowgreen;	/*height 를 주지 않는 이유는 자식이 있으므로 자식의 크기에 조절됨*/
+	/* border: 5px solid blue;  자식요소가 float으로 설정되어 높이값이 0으로 설정됨 */
+	overflow: hidden;
+}
+
+.box2 article{
+	/* border: 5px solid blue; */
+/* 	width:33.3333333333%;         소수점이하 자리수를 늘이면 보다 정확해짐 */
+	height:300px;
+	float:left;
+}
+.sub1{
+	background-color: orange;
+	width:600px;
+}
+.sub2{
+	background-color: lightgray;
+	width:400px;
+}
+.sub3{
+	background-color: purple;
+	width:200px;
+}
+
+footer{
+	background-color: skyblue;
+	height:100px;
+}
