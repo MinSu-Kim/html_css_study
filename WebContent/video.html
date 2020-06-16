@@ -3,94 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <title>독도</title>
+<link rel="stylesheet" href="css/common.css">
 <style>
-	@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
-
-	* {
-		margin: 0;
-		padding: 0;
-		font-family: 'Noto Sans KR', sans-serif;
-		color: #07080a;
-	}
-	
-	a {
-		text-decoration: none;
-	}
-	
-	.container {
-		width: 950px;
-		margin: 0 auto;
-	}
-	
-	header, nav {
-		border-bottom: 2px solid #084f93;
-	}
-	
-	.logo {
-		width: 200px;
-		margin: 0 auto;
-		overflow: hidden;
-		padding: 30px 0;
-	}
-	
-	.logo img {
-		width: 45px;
-		float: left;
-		margin-right: 10px;
-	}
-	
-	.logo h1 {
-		float: left;
-	}
-	
-	nav {
-		margin-bottom: 50px;
-	}
-	
-	nav ul {
-		overflow: hidden;
-		height: 45px;
-		line-height: 45px;
-	}
-	
-	nav li {
-		list-style: none;
-		float: left;
-		width: 20%;
-		text-align: center;
-	}
-	
-	nav a {
-		font-size: 18px;
-	}
-	
-	nav a:hover {
-		font-weight: 600;
-	}
-	
 	section article {
-		margin-bottom: 100px;
 		text-align: center;
+		width: 840px;
+		margin: 0 auto;
+		margin-bottom: 50px;
 	}
 	
 	section h2 {
 		border-left: 5px solid #d88144;
 		padding-left: 10px;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 		text-align: left;
-	}
-	
-	footer {
-		margin-top: 50px;
-		border-top: 2px solid #084f93;
-		padding: 20px;
 	}
 </style>
 </head>
 <body>
 	<header>
-		<div class="logo">
+		<div id="logo_left">
 			<img src="images/logo.png" alt="logo" />
+		</div>
+		<div id="logo_right">
 			<h1>독도</h1>
 		</div>
 	</header>
@@ -106,12 +41,12 @@
 	<section class="container">
 		<article>
 			<h2>외교부 독도 소개 동영상</h2>
-			<iframe width="640" height="360" src="https://www.youtube.com/embed/muB4_LNZ2Rk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="840" height="460" src="https://www.youtube.com/embed/muB4_LNZ2Rk" seamless></iframe>
 		</article>
 		<article>
 			<h2>플래시몹(서울역광장) 동영상</h2>
-			<video controls>
-				<source src="media/mop.mp4" type="video/mp4"></source>
+			<video controls width="840">
+				<source src="media/mop.mp4" type="video/mp4" ></source>
 			</video>
 		</article>	
 	</section>

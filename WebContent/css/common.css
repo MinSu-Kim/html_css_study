@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	color: #07080a;
+}
+
+a {
+	text-decoration: none;
+}
+
+header, nav {
+	border-bottom: 2px solid #084f93;
+}
+
+header {
+	width: 100%;
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+#logo_left {
+	width: 50%;
+	float: left;
+}
+
+#logo_left img {
+	width: 137px;
+	height: 91px;
+	margin-right: 10px;
+	float: right;
+}
+
+#logo_right {
+	float: right;
+	width: 50%;
+}
+
+#logo_right h1 {
+	display: inline;
+	float: left;
+	line-height: 91px; /*높이를 줄간격에 맞추면 세로 가운데 배치됨*/
+	font-size: 3em; /* 16px * 3 */
+}
+
+nav {
+	margin-bottom: 30px;
+}
+
+nav ul {
+	height: 45px;
+	line-height: 45px;
+	font-size: 1.5em;
+}
+
+nav a:hover {
+	color: red;
+}
+
+nav li {
+	list-style: none;
+	font-weight: bold;
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+.container {
+	width: 80%;
+	margin: 0px auto;
+}
+
+footer {
+	margin-top: 30px;
+	border-top: 2px solid #084f93;
+	padding: 20px;
+	text-align: center;
+}
